@@ -25,30 +25,14 @@ public class CustomerEntity {
     private Long id;
 
     @Column
-    private String name;
-
-    @Column
-    private String surname;
+    private String nombre;
 
     @Column
     private Integer age;
 
     @Column
-    private String address;
-
-    @Column
-    private String telephone;
-
-    @Column
-    private String email;
-
-    @Column
-    private String nationality;
-
-    @Column
-    private String maritalStatus;
+    private String tecnologiaVotada;
 
     @Column
     private boolean deleted = Boolean.FALSE;
-
 }

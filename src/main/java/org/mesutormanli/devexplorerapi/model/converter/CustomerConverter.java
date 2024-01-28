@@ -13,14 +13,9 @@ public class CustomerConverter {
         } else {
             return CustomerDto.builder()
                     .id(entity.getId())
-                    .name(entity.getName())
-                    .surname(entity.getSurname())
+                    .nombre(entity.getNombre())
                     .age(entity.getAge())
-                    .address(entity.getAddress())
-                    .telephone(entity.getTelephone())
-                    .email(entity.getEmail())
-                    .nationality(entity.getNationality())
-                    .maritalStatus(entity.getMaritalStatus())
+                    .tecnologiaVotada(entity.getTecnologiaVotada())
                     .build();
         }
     }
@@ -30,14 +25,9 @@ public class CustomerConverter {
             return null;
         } else {
             return CustomerEntity.builder()
-                    .name(request.getName())
-                    .surname(request.getSurname())
+                    .nombre(request.getNombre())
                     .age(request.getAge())
-                    .address(request.getAddress())
-                    .telephone(request.getTelephone())
-                    .email(request.getEmail())
-                    .nationality(request.getNationality())
-                    .maritalStatus(request.getMaritalStatus())
+                    .tecnologiaVotada(request.getTecnologiaVotada())
                     .build();
         }
     }

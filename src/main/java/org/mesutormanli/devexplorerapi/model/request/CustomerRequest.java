@@ -8,12 +8,7 @@ import java.io.Serializable;
 @Data
 @Builder
 public class CustomerRequest implements Serializable {
-    private String name;
-    private String surname;
+    private String nombre;
     private Integer age;
-    private String address;
-    private String telephone;
-    private String email;
-    private String nationality;
-    private String maritalStatus;
+    private String tecnologiaVotada;
 }
