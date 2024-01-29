@@ -27,5 +27,5 @@ public class Tecnologia {
     private String tipo; // Backend o Frontend
 
     @Column
-    private String descripcioón;
+    private String descripcion;
 }
